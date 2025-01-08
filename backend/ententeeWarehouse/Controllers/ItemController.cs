@@ -57,6 +57,7 @@ public class ItemController: ControllerBase
     }
 
     [HttpDelete]
+    [Route("{id}")]
     public ActionResult<ItemDto> Delete(int id)
     {
         itemService.DeleteItem(id);
