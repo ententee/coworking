@@ -1,0 +1,16 @@
+Setup instructions:
+
+Prerequisites: .NET 6, node.js 18
+
+Backend:
+navigate to backend/ententeeWarehouse subfolder
+> dotnet restore
+> dotnet run
+
+Or just use your favorite IDE
+
+
+Frontend:
+navigate to frontend subfolder
+> npm clean-install
+> npm run dev
