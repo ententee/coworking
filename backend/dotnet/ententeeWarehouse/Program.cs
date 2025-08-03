@@ -19,6 +19,11 @@ builder.Services.AddAuthorization(options =>
         .RequireAuthenticatedUser()
         .Build();
 });
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.Listen(System.Net.IPAddress.Loopback, 5000);
+});
+
 builder.Services.AddDbContext<WarehouseDbContext>();
 
 builder.Services.AddTransient<ItemService>();
@@ -36,12 +41,13 @@ using (var scope = app.Services.CreateScope())
 app.UseCors(policy =>
 {
     if (app.Environment.IsDevelopment())
-        policy.WithOrigins("http://localhost:5173");
+        policy.WithOrigins("http://localhost:5000");
 
     policy.AllowAnyMethod();
     policy.AllowAnyHeader();
 });
 
+app.UsePathBase("/api");
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
