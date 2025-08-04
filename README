@@ -2,6 +2,8 @@ Setup instructions:
 
 Choose your combination of backend/frontend as assigned.
 
+Backend will always start on port 5000, frontend on port 3000.
+
 # Backend
 
 ## .NET
