@@ -1,16 +1,31 @@
 Setup instructions:
 
-Prerequisites: .NET 6, node.js 18
+Choose your combination of backend/frontend as assigned.
 
-Backend:
-navigate to backend/ententeeWarehouse subfolder
+# Backend
+
+## .NET
+
+Prerequisity: .NET 9
+
+navigate to backend/dotnet
 > dotnet restore
 > dotnet run
 
-Or just use your favorite IDE
+## Java Spring Boot
 
+Prerequisity: Java 21
 
-Frontend:
-navigate to frontend subfolder
+navigate to backend/java
+> mvn package
+> java -jar target/coworking-0.0.1-SNAPSHOT.jar
+
+# Frontend
+
+## React
+
+Prerequisity: node.js 18
+
+navigate to frontend/react
 > npm clean-install
 > npm run dev
