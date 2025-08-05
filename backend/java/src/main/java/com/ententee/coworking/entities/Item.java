@@ -8,15 +8,15 @@ import jakarta.persistence.Table;
 @Table(name = "items")
 public class Item {
     @Id
-    private int itemId;
+    private Integer itemId;
     private String name;
     private int amount;
 
-    public int getItemId() {
+    public Integer getItemId() {
         return itemId;
     }
 
-    public void setItemId(int itemId) {
+    public void setItemId(Integer itemId) {
         this.itemId = itemId;
     }
 

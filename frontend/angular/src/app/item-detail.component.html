@@ -1,0 +1,20 @@
+@if(isLoading()) {
+    <p>Loading item...</p>
+} @else {
+    <form [formGroup]="itemForm" class="item-detail">
+    <button type="button" (click)="back()">Back</button>
+    Item Detail
+        @if(itemForm.value.id != 0) {
+            <label>ID: {{itemForm.value.id}}</label>
+        }
+    <div>
+        <label>Name: </label>
+        <input formControlName="name" />
+    </div>
+    <div>
+        <label>Amount: </label>
+        <input formControlName="amount" />
+    </div>
+    <button type="button" (click)="saveItem()">Save</button>
+    </form>
+}

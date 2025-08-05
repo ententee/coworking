@@ -1,0 +1,10 @@
+<div class="login">
+    <label>Username</label>
+    <input [(ngModel)]="username" />
+    <label>Password</label>
+    <input [(ngModel)]="password" />
+    <button type="button" (click)="login()">Login</button>
+    @if (error()) {
+        "There was an error while logging in. Try using credentials admin/admin"
+    }
+</div>
