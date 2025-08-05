@@ -26,8 +26,16 @@ navigate to backend/java
 
 ## React
 
-Prerequisity: node.js 18
+Prerequisity: node.js 18 (should work on higher versions as well)
 
 navigate to frontend/react
+> npm clean-install
+> npm run dev
+
+## Angular
+
+Prerequisity: node.js 20 (should work on higher versions as well)
+
+navigate to frontend/angular
 > npm clean-install
 > npm run dev
