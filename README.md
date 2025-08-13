@@ -22,6 +22,16 @@ navigate to backend/java
 > mvn package
 > java -jar target/coworking-0.0.1-SNAPSHOT.jar
 
+## Python - FastAPI
+
+Prerequisity: Python 3.8+
+
+navigate to backend/python/FastAPI
+> python -m venv venv
+> source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+> pip install -r requirements.txt
+> uvicorn main:app --host 0.0.0.0 --port 5000 --reload
+
 # Frontend
 
 ## React

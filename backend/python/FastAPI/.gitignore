@@ -1,0 +1,22 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# SQLite database
+warehouse.db
+*.db-journal
+
+# Environment variables
+.env
+
+# Test artifacts
+.pytest_cache/
+.coverage
+
+# IDE-specific files
+.idea/
