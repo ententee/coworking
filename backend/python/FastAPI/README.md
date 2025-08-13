@@ -35,17 +35,17 @@ All endpoints are prefixed with `/api`.
     ```
 
 3.  **Install dependencies**:
-    Navigate to the `python-fastapi` directory and run:
+    Navigate to the `python` directory and run:
     ```sh
-    pip install -r requirements.txt
+    pip install -r FastAPI/requirements.txt
     ```
 
 ## Running the Application
 
-To start the server, run the following command from within the `python-fastapi` directory:
+To start the server, run the following command from within the `python` directory:
 
 ```sh
-uvicorn main:app --host 0.0.0.0 --port 5000 --reload
+uvicorn FastAPI.main:app --host 0.0.0.0 --port 5000 --reload
 ```
 
 The application will be available at `http://localhost:5000`.
